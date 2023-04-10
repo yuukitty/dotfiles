@@ -4,20 +4,22 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let mapleader = " "
+
 call plug#begin()
 
-" Latex
+" latex
     Plug 'anufrievroman/vim-angry-reviewer'
     Plug 'anufrievroman/vim-tex-kawaii'
     Plug 'lervag/vimtex'
 
-" Syntax
+" syntax
     Plug 'juliaeditorsupport/julia-vim'
     Plug 'vim-python/python-syntax'
     Plug 'scrooloose/syntastic'
     Plug 'rust-lang/rust.vim'
 
-" QOL
+" qol
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
     Plug 'MattesGroeger/vim-bookmarks'
     Plug 'tpope/vim-commentary'
@@ -29,7 +31,7 @@ call plug#begin()
     Plug 'wellle/targets.vim'
     Plug 'sirver/ultisnips'
 
-" Visuals
+" visuals
     Plug 'catppuccin/vim', { 'as': 'catppuccin' }
     Plug 'ryanoasis/vim-devicons'
     Plug 'itchyny/lightline.vim'
@@ -37,24 +39,25 @@ call plug#begin()
 
 call plug#end()
 
-" VimTeX settings
+" vimtex settings
+
 let g:vimtex_view_method='zathura'
 let g:vimtext_quickfix_mode=0
 let g:tex_conceal='abdmg'
 let g:tex_flavor='latex'
 set conceallevel=1
 
-" UltiSnips settings
+" ultiSnips settings
 let g:UltiSnipsSnippetDirectories=['~/.config/nvim/UltiSnips']
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsExpandTrigger='<tab>'
 
-" Vim-Bookmarks settings
+" vim-bookmarks settings
 let g:bookmark_auto_close=1
 let g:bookmark_sign='>>'
 
-" Coc settings
+" coc settings
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -65,21 +68,21 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
- 
-" Make <CR> to accept selected completion item or notify coc.nvim to format
-" <C-g>u breaks current undo, please make your own choice.
+
+" make enter accept suggestions
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" Lightline settings
+" lightline settings
 let g:lightline = { 'colorscheme': 'catppuccin_mocha' }
 :colorscheme catppuccin_mocha
 
-" AngryReviewer settings
+" angryreviewer settings
 let g:AngryReviewerEnglish='british'
 
-" NERDTree settings
+" nerdtree settings
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['~/.cache$[[path]]', '~/.clojure$[[path]]', '~/.gnupg$[[path]]', '~/.local$[[path]]', '~/.m2$[[path]]', '~/.mozilla$[[path]]', '~/.npm$[[path]]', '~/.spicetify$[[path]]', '~/.yarn$[[path]]', '~/Downloads$[[path]]', '~/memory:$[[path]]', '~/.bash_history$[[path]]', '~/.bash_logout$[[path]]', '~/.bash_profile$[[path]]', '~/.dmrc$[[path]]', '~/.git-credentials$[[path]]','\.pid$[[file]]', '~/.Xauthority$[[path]]', '~/.xsession-errors$[[path]]', '~/.xsession-errors.old$[[path]]', '~/.electron-gyp$[[path]]', '~/.git$[[path]]', '~/.gitlibs$[[path]]', '~/.pki$[[path]]']
 
 set backspace=indent,eol,start
 set undolevels=1000
