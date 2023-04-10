@@ -1,0 +1,30 @@
+[2023-04-10 04:47:41.382] [info] Logseq App(0.9.1) Starting... 
+[2023-04-10 04:47:41.387] [info] restore proxy settings {:type "system"}
+[2023-04-10 04:47:41.388] [info] set proxy to {:type "system"}
+[2023-04-10 04:47:42.660] [debug] :electron.handler/watch-dir {:path "/home/oliver/.logseq/config"}
+[2023-04-10 04:48:19.729] [debug] window-all-closed Quitting...
+[2023-04-10 04:48:31.112] [info] Logseq App(0.9.1) Starting... 
+[2023-04-10 04:48:31.115] [info] restore proxy settings {:type "system"}
+[2023-04-10 04:48:31.116] [info] set proxy to {:type "system"}
+[2023-04-10 04:48:32.400] [debug] :electron.handler/watch-dir {:path "/home/oliver/.logseq/config"}
+[2023-04-10 04:49:23.711] [debug] [Marketplace] Installing: catppuccin/logseq
+[2023-04-10 04:49:24.134] [debug] [Marketplace] [Release URL]  https://api.github.com/repos/catppuccin/logseq/releases/latest [Response Status/Text] 200 -
+[2023-04-10 04:49:24.137] [debug] [Marketplace] [Release Asset] # v0.2.2  => https://api.github.com/repos/catppuccin/logseq/releases/assets/97878308
+[2023-04-10 04:49:25.096] [debug] [Marketplace] [UpdatedDONE] v0.2.2
+[2023-04-10 04:51:30.572] [debug] window-all-closed Quitting...
+[2023-04-10 04:52:09.939] [info] Logseq App(0.9.1) Starting... 
+[2023-04-10 04:52:09.942] [info] restore proxy settings {:type "system"}
+[2023-04-10 04:52:09.952] [info] set proxy to {:type "system"}
+[2023-04-10 04:52:11.346] [debug] :electron.handler/watch-dir {:path "/home/oliver/.logseq/config"}
+[2023-04-10 04:55:19.784] [debug] window-all-closed Quitting...
+[2023-04-10 04:55:23.083] [info] Logseq App(0.9.1) Starting... 
+[2023-04-10 04:55:23.087] [info] restore proxy settings {:type "system"}
+[2023-04-10 04:55:23.100] [info] set proxy to {:type "system"}
+[2023-04-10 04:55:24.436] [debug] :electron.handler/watch-dir {:path "/home/oliver/.logseq/config"}
+[2023-04-10 04:55:45.446] [debug] window-all-closed Quitting...
+[2023-04-10 05:01:05.427] [info] Logseq App(0.9.1) Starting... 
+[2023-04-10 05:01:05.435] [info] restore proxy settings {:type "system"}
+[2023-04-10 05:01:05.444] [info] set proxy to {:type "system"}
+[2023-04-10 05:01:10.394] [debug] :electron.handler/watch-dir {:path "/home/oliver/.logseq/config"}
+[2023-04-10 06:25:08.579] [info] :electron.handler/open-dir open folder selection dialog
+[2023-04-10 06:25:13.968] [debug] :electron.handler/open-dir {:path nil}

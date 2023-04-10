@@ -1,0 +1,7 @@
+2023/04/10-05:01:12.210 aef Reusing MANIFEST /home/oliver/.config/Logseq/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/04/10-05:01:12.210 aef Recovering log #3
+2023/04/10-05:01:12.313 aef Reusing old log /home/oliver/.config/Logseq/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/04/10-06:45:53.649 84fad Level-0 table #5: started
+2023/04/10-06:45:53.652 84fad Level-0 table #5: 32379 bytes OK
+2023/04/10-06:45:53.656 84fad Delete type=0 #3
+2023/04/10-06:45:53.657 84fad Manual compaction at level-0 from (begin) .. (end); will stop at (end)

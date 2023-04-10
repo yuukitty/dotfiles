@@ -1,0 +1,4 @@
+include catppuccin-mocha
+
+map p navigate previous
+map n navigate next
