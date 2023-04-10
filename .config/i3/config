@@ -1,7 +1,5 @@
-# keybinds
+# variables
 set $mod Mod1
-
-# define workspace shortcuts 
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -28,43 +26,35 @@ client.unfocused	#333333	#ffffff	#ffffff	#ffffff	  #333333
 
 # initial executions for wm
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id feh --bg-scale ~/.config/background.png
+exec --no-startup-id feh --bg-scale ~/.config/wallpapers/cat-leaves.png
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id picom -b
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 # initial executions for applications
+# write bash script to do it?
 exec --no-startup-id alacritty
 exec --no-startup-id discord 
-exec --no-startup-id spotify-launcher
-exec --no-startup-id zathura
-exec --no-startup-id urvxt -e calcure
-exec --no-startup-id logseq
+exec --no-startup-id spotify
+# exec --no-startup-id alacritty -e calcure
+# exec --no-startup-id logseq
+# exec --no-startup-id brave
 
-# workshop 2: discord + spotify
+# assigns some windows to workspace
 assign [class="discord"] $ws2
-assign [class="spotify"] $ws2
+assign [class="Spotify"] $ws2
 
-# workspace 3: alacritty + zathura
-assign [class="alacritty"] $ws3
-assign [class="zathura"] $ws3
-
-# workspace 4: calcure + loqseq
-assign [class="calcure"] $ws4
-assign [class="logseq"] $ws4
-
-# floating window key
+# floating windows
 floating_modifier $mod
-
-# toggle floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+shift+space floating toggle
 
 # shortcuts
 bindsym $mod+space exec "rofi -show run"
-bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+bindsym $mod+shift+s exec --no-startup-id flameshot gui
 bindsym $mod+period scratchpad show
 bindsym $mod+comma move scratchpad
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+q kill
+bindsym $mod+shift+q kill
 
 # change focus
 bindsym $mod+h focus left
