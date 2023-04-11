@@ -30,6 +30,7 @@ exec --no-startup-id feh --bg-scale ~/.config/wallpapers/cat-leaves.png
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom -b
 exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id /opt/disablemouseacceleration.sh
 
 # initial executions for applications
 # write bash script to do it?
@@ -49,6 +50,7 @@ floating_modifier $mod
 bindsym $mod+shift+space floating toggle
 
 # shortcuts
+bindsym $mod+Tab exec i3-cycle next
 bindsym $mod+space exec "rofi -show run"
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
 bindsym $mod+period scratchpad show
