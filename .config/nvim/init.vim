@@ -40,7 +40,6 @@ call plug#begin()
 call plug#end()
 
 " vimtex settings
-
 let g:vimtex_view_method='zathura'
 let g:vimtext_quickfix_mode=0
 let g:tex_conceal='abdmg'
@@ -105,7 +104,9 @@ set wrap
 
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap <leader>r :!cargo run --bin %:r
+nnoremap <leader>r :!cargo run<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>vc :e ~/.config/nvim/init.vim<CR>
 nnoremap <leader>ar :call AngryReviewer
 autocmd VimEnter * NERDTree ~/
 nnoremap <esc>^[ <esc>^[
