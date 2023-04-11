@@ -1,4 +1,18 @@
 include catppuccin-mocha
 
+# configure font
+font "jetbrains mono nerd font 12"
+
+# shortcuts
+map o focus_inputbar ":open ~/library/"
 map p navigate previous
 map n navigate next
+map R rotate
+
+map r reload
+map i recolor
+
+# defaults
+set adjust-open "best-fit"
+set recolor true
+
